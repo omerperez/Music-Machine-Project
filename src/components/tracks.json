@@ -1,0 +1,49 @@
+{
+    "tracks": [
+        {
+        "trackName": "Electronic Beats", 
+        "trackImage": "../TrackImages/imageTrack1.webp",
+        "audio": "../Audios/120_future_funk_beats_25.mp3"
+        },
+        {
+        "trackName": "Stutter Breakbeats", 
+        "trackImage": "../TrackImages/imageTrack2.jpeg",
+        "audio": "../Audios/120_stutter_breakbeats_16.mp3"
+        },
+        {
+        "trackName": "Bass Guitar", 
+        "trackImage": "../TrackImages/imageTrack3.jpeg",
+        "audio": "../Audios/Bass Warwick heavy funk groove on E 120 BPM.mp3"
+        },
+        {
+        "trackName": "Electric Guitar", 
+        "trackImage": "../TrackImages/imageTrack4.png",
+        "audio": "../Audios/electric guitar coutry slide 120bpm - B.mp3"
+        },
+        {
+        "trackName": "Drums & Cymbals", 
+        "trackImage": "../TrackImages/imageTrack5.jpeg",
+        "audio": "../Audios/FUD_120_StompySlosh.mp3"
+        },
+        {
+        "trackName": "Easy Drumming", 
+        "trackImage": "../TrackImages/imageTrack6.jpeg",
+        "audio": "../Audios/GrooveB_120bpm_Tanggu.mp3"
+        },
+        {
+        "trackName": "Maze Politics", 
+        "trackImage": "../TrackImages/imageTrack7.jpeg",
+        "audio": "../Audios/MazePolitics_120_Perc.mp3"
+        },
+        {
+        "trackName": "PAS 3 GROOVE", 
+        "trackImage": "../TrackImages/imageTrack8.jpeg",
+        "audio": "../Audios/PAS3GROOVE1.03B.mp3"
+        },
+        {
+        "trackName": "Silent Star", 
+        "trackImage": "../TrackImages/imageTrack9.webp",
+        "audio": "../Audios/SilentStar_120_Em_OrganSynth.mp3"
+        }
+    ]
+}

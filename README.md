@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+Omer Perez Moveo Project: 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Library - React (Hooks) 
 
-## Available Scripts
+A. JSX Files  
+    1. HomePage component: 
+        a. Use 4 states - 
+            1) audiosToPlaying - array of objects (each object contains key - name of mp3 file, and value - audio file) 
+            2) stop playing - any object that enters to the "audiosToPlaying" state at some point during the loop (need for stop the audios and reset them)
+            3) nowPlaying - every time the function "playMusic" starts a new loop it updates the names of the files that playing in this state
+            4) first - any change of the client in the selection of songs the state help to know that audiosToPlaying need to update by useEffect 
 
-In the project directory, you can run:
+        b. Function - 
+        1) audiosCheckedTrue -  updates the client's selections in audiosToPlaying state
+        2) playMusic - plays and stops the music ("start" - play / "stop" - stop)
 
-### `npm start`
+        c. useEffect - 
+            1) If audiosToPlaying update - update the first state to the first object in audiosToPlaying array 
+            2) If first / audiosToPlaying update - start the playMusic function (with the update audiosToPlaying state) after the music ended (create loop)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    2. Buttom components - 
+        a. switch button / start button / stop button - button design (use material ui) 
+        b. In the homePage I use  "onClick" to start / stop / update (depends on which button) - I added a comment in the code. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    3. NowPlayingCard - design for show the audios name that playing right now
+    4. MusicCard - design and setting value / id / name / audio location 
+    5. PadsView - arranges all the audio cards on the page correctly and sends information from json file (tracks.json)
+    6. App.js - show the HomePage Component (I used Router even though it is not needed at the moment, 
+                                                maybe further development of the project and proper division into paths)
 
-### `npm test`
+B. Json File - 
+    1. tracks.json - I saved the images and files locally in the project so I created a 
+                        json file that sends an array with information about each audio file (name / image / audio location)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+C. Audios & Images (Public folder) - save the image and the audios (mp3 Files)
